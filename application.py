@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///beaches.db")
+db = SQL("postgres://vwpfpksxvnxgrr:35921b23ed972db6f6eda4f93455d758d90380ed3261258beccf0ade570f5614@ec2-54-144-45-5.compute-1.amazonaws.com:5432/d1oal2i4jig022")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
